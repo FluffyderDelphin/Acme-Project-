@@ -1,0 +1,16 @@
+@use 'mixins' as mix;
+
+
+.hidden__mobile{
+    @include mix.breakpoint-down (medium){
+        display: none;
+    }
+  
+}
+
+.hidden__desktop{
+    @include mix.breakpoint-up (medium){
+        display: none;
+    }
+  
+}
