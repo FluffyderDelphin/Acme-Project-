@@ -1,146 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Oswald:wght@300;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./scss/main.scss">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Oswald:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/main.scss" />
     <title>Document</title>
-</head>
-<body>
- <header>
-    <nav>
-      <ul>
-        <li><a href="#" class="nav__link link">Products</a></li>
-        <li><a href="#" class="nav__link link">Industries</a></li>
-        <li><a href="#" class="nav__link link">Media</a></li>
-        <li><a href="#" class="nav__link link">Downloads</a></li>
-        <li><a href="#" class="nav__link link">Contacts</a></li>
-      </ul>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="container">
+          <div class="nav__logo">
+            <img src="../public/logo/ACME_Logo.svg" alt="Acme Company Logo" />
+          </div>
 
-    </nav>
+          <ul class="hidden__mobile">
+            <li><a href="#" class="nav__link link">Products</a></li>
+            <li><a href="#" class="nav__link link">Industries</a></li>
+            <li><a href="#" class="nav__link link">Media</a></li>
+            <li><a href="#" class="nav__link link">Downloads</a></li>
+            <li><a href="#" class="nav__link link">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
 
-    <section class="hero">
+      <section class="hero">
         <div class="hero__text">
-            <h1>
-                News
-            </h1>
-          <p>Be it the latest news about Acme or white papers on the most interesting explosions,
-            here you will learn everything you need to know about this great corporation! Do not miss anything,otherwise your failure will not be the best.</p>    
-
+          <h1>News</h1>
+          <p>
+            Be it the latest news about Acme or white papers on the most
+            interesting explosions, here you will learn everything you need to
+            know about this great corporation! Do not miss anything,otherwise
+            your failure will not be the best.
+          </p>
         </div>
-      
-     <div class="hero__bar">
-      <p>Media -> News</p>
-     </div>
-    </section>
 
-  </header>
+        <div class="hero__bar">
+          <p>Media -> News</p>
+        </div>
+      </section>
+    </header>
     <main class="mainContent">
+      <article class="news">
+        <section class="news__article">
+          <p>23/08/2021</p>
+          <h3>The Smallest and Shallowest Worlds Major Ocans</h3>
+          <a>Read More</a>
+        </section>
+      </article>
 
-    <article class="news">
-      <section class="news__article">
-        <p>23/08/2021</p>
-        <h3>The Smallest and Shallowest Worlds Major Ocans</h3>
-        <a>Read More</a>
-      </section>
+      <aside class="contact">
+        <h2>Contact</h2>
+        <section class="contact__box">
+          <div class="contact__name">
+            <h3>Jane Doe</h3>
+            <p>Marketing & Commnucations</p>
+          </div>
+          <div class="contact__info">
+            <div class="contact__info__img">
+              <img
+                src="../public/portraits/alex-starnes-PK_t0Lrh7MM-unsplash.jpg"
+              />
+            </div>
+            <div class="contact__info__phone">+49 174 358 645 25</div>
+            <div class="contact__info__time">
+              Mo/Tu/Fr: 08:00 a.m.- 05:30 p.m.
+            </div>
+            <div class="contact__info__email">JANE.DOE@ACME.DE</div>
+            <div class="contact__info__location">
+              ACME Gmbh Die Str. 123 57074 Siegen Germany
+              <a>Calcutlate Route</a>
+            </div>
+          </div>
+        </section>
 
+        <section class="contact__box">
+          <div class="contact__name">
+            <h3>Max Musterman</h3>
+            <p>Marketing & Commnucations</p>
+          </div>
+          <div class="contact__info">
+            <div class="contact__info__img">
+              <img
+                src="../public/portraits/carlos-magno-sTORW_4vrwg-unsplash.jpg"
+              />
+            </div>
+            <div class="contact__info__phone">+49 174 358 645 25</div>
+            <div class="contact__info__time">
+              Mo/Tu/Fr: 08:00 a.m.- 05:30 p.m.
+            </div>
+          </div>
+        </section>
+      </aside>
+    </main>
 
+    <footer>
+      <h2>Do you have any Suggetions ?</h2>
+      <from>
+        <div class="footer__form__inputs">
+          <label for="form__name">Name</label>
+          <input type="text" class="footer__form__name" id="form__name" />
 
-    </article>
+          <label for="form__email">Email</label>
+          <input type="text" class="footer__form__name" id="form__email" />
 
-    <aside class="contact">
-     <h2>Contact</h2>
-      <section class="contact__box">
-        <div class="contact__name">
-          <h3>Jane Doe</h3>
-          <p>Marketing & Commnucations</p>
+          <label for="form__phone">Phone(optional)</label>
+          <input type="text" class="footer__form__name" id="form__phone" />
+
+          <label for="form__country">Country</label>
+          <input type="text" class="footer__form__name" id="form__country" />
+
+          <label for="form__name">Your Message</label>
+          <textarea></textarea>
         </div>
-       <div class="contact__info">
-         <div class="contact__info__img"><img src="../public/portraits/alex-starnes-PK_t0Lrh7MM-unsplash.jpg"></div>
-         <div class="contact__info__phone">+49 174 358 645 25</div>
-         <div class="contact__info__time">Mo/Tu/Fr: 08:00 a.m.- 05:30 p.m.</div>
-         <div class="contact__info__email">JANE.DOE@ACME.DE</div>
-         <div class="contact__info__location">ACME Gmbh
-          Die Str. 123 
-          57074 Siegen
-          Germany
-          <a>Calcutlate Route</a>
-         </div>
 
-
-       </div>
-      </section>
-
-      <section class="contact__box">
-        <div class="contact__name">
-          <h3>Max Musterman</h3>
-          <p>Marketing & Commnucations</p>
+        <div class="footer__form__submit">
+          <input type="radio" name="consent" id="form__consent" />
+          <label for="form__consent"
+            >I hereby consent to the processing of my data in accordance with
+            the privacy information</label
+          >
+          <button type="submit">-> Send</button>
         </div>
-       <div class="contact__info">
-         <div class="contact__info__img"><img src="../public/portraits/carlos-magno-sTORW_4vrwg-unsplash.jpg"></div>
-         <div class="contact__info__phone">+49 174 358 645 25</div>
-         <div class="contact__info__time">Mo/Tu/Fr: 08:00 a.m.- 05:30 p.m.</div>
+      </from>
 
-       </div>
+      <section class="footer__closing">
+        <div class="footer__legal">
+          <a href="">Legal Notice</a>
+          <a href="">Privacy</a>
+        </div>
+
+        <div class="footer__icons">
+          <img src="../public/icons/Facebook.svg" />
+          <img src="../public/icons/LinkedIn.svg" />
+          <img src="../public/icons/Twitter.svg" />
+        </div>
+
+        <div class="footer__copyright">
+          <h4>© 2021, Part of the <a>ACME Group</a></h4>
+        </div>
       </section>
-    </aside>
-
-
-  </main>
-
-  <footer>
-    <h2>Do you have any Suggetions ?</h2>
-    <from>
-      <div class="footer__form__inputs">
-         <label for="form__name">Name</label>
-        <input type="text" class="footer__form__name" id="form__name">
-
-        <label for="form__email">Email</label>
-        <input type="text" class="footer__form__name" id="form__email">
-
-        <label for="form__phone">Phone(optional)</label>
-        <input type="text" class="footer__form__name" id="form__phone">
-
-        <label for="form__country">Country</label>
-        <input type="text" class="footer__form__name" id="form__country">
-
-        <label for="form__name">Your Message</label>
-        <textarea></textarea>
-      </div>
-
-      <div class="footer__form__submit">
-        <input type="radio" name="consent" id="form__consent"> 
-        <label for="form__consent">I hereby consent to the processing of my data in accordance with the privacy information</label>
-        <button type="submit">-> Send</button>
-      </div>
-    </from>
-
-    <section class="footer__closing">
-      <div class="footer__legal">
-       <a href="">Legal Notice</a>
-       <a href="">Privacy</a>
-
-      </div>
-
-      <div class="footer__icons">
-        <img src="../public/icons/Facebook.svg">
-        <img src="../public/icons/LinkedIn.svg">
-        <img src="../public/icons/Twitter.svg">
-      </div>
-
-      <div class="footer__copyright">
-        <h4>© 2021, Part of the <a>ACME Group</a></h4>
-      </div>
-    </section>
-
-
-  </footer>
-
- 
-
-</body>
+    </footer>
+  </body>
 </html>
