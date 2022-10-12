@@ -1,7 +1,26 @@
-
+@use '../colors' as col;
 
 .nav{
     .container{
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+    &__logo{
+        height:2rem ;
+    }
+    &__mobile__menu{
+     background-color: col.$color-yellow ;
+     padding: 8px 6px;
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+      span {
+        display: block;
+        height: 2px;
+        width: 1.25rem;
+        background-color: col.$color-white;
+      }
     }
 }
