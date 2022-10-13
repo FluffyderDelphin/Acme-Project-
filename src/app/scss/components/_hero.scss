@@ -1,0 +1,14 @@
+@use '../colors' as col;
+
+.hero{
+ 
+    background-image: url('../../public/background/ACME_Background-Pattern.png');
+    h1{
+        color:col.$color-yellow ;
+    }
+
+    p{
+        color:col.$color-white ;
+    }
+
+}
