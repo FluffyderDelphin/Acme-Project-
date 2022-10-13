@@ -1,0 +1,30 @@
+@use '../colors' as col;
+@use '../media' as mix;
+
+.news{
+
+
+    &__article{
+        padding: 2.81rem 0;
+        border-bottom: 3px solid col.$color-green-light;
+    }
+
+    h2{
+        color: col.$color-green;
+    }
+
+    &__date{
+        color: col.$color-green-middle;
+    }
+
+    &__text{
+        margin: .8rem 0;
+    }
+
+    &__link{
+        color: col.$color-yellow;
+        border-bottom: 1px solid col.$color-yellow;
+    }
+
+
+}
