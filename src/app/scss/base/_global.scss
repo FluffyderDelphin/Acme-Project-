@@ -5,6 +5,7 @@ img {
 
 html{
     font-size: 100%;
+    line-height: 1.5;
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -19,7 +20,6 @@ html{
 
 body{
     overflow-x: hidden;
-
     &.noscroll {
         overflow: hidden;
       }

@@ -1,13 +1,43 @@
 @use '../colors' as col;
+@use '../media' as mix;
 
 .hero{
     background-image: url('../../public/background/ACME_Background-Pattern.png');
-    h1{
-        color:col.$color-yellow ;
+
+    &__text{
+        padding: 1.8rem 0;
     }
 
-    p{
-        color:col.$color-white ;
+    h1{
+        color:col.$color-yellow ;
+        text-transform: uppercase;
+    }
+
+    h3{
+        color:col.$color-white;
+        max-width: 62rem;
+    }
+
+    &__bar{
+        background-color: col.$color-yellow;
+        padding: .3rem 0;
+    }
+
+    .bread{
+        display: flex;
+        gap: 10px;
+
+        span{
+            color: col.$color-black;
+        }
+
+        .current{
+            color: col.$color-white;
+        }
+
+        &__arrow{
+            height: 1rem;
+        }
     }
 
 }

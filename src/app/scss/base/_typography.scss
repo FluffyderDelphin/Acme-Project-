@@ -1,19 +1,33 @@
+@use '../media/' as mix;
+
 h1{
   font-size: 4rem;
    font-family: 'Oswald', sans-serif;
    font-weight: 500;
+
+   @include mix.breakpoint-down (medium){
+    font-size: 3rem;
+}
 }
 
 h2,.nav__desktop__menu a{ 
   font-size: 1.25rem;
   font-family: 'Oswald',sans-serif;
   font-weight: 600;
+
+  @include mix.breakpoint-down (medium){
+    font-size: .9rem;
+}
 }
 
 h3{
     font-size: 1.25rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+
+    @include mix.breakpoint-down (medium){
+        font-size: .9rem;
+    }
 }
 h4{
     font-size: 0.875rem;
@@ -43,5 +57,6 @@ p{
   font-size: 0.75rem;
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
+  text-transform: uppercase;
 } 
 
