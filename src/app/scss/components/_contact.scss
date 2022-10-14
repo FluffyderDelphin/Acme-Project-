@@ -1,0 +1,51 @@
+@use '../colors' as col;
+@use '../media' as mix;
+
+.contact{
+    margin-top: 2.81rem;
+
+    h1{
+        color: col.$color-green-light;
+     line-height: .9;
+    }
+    h2{
+        margin-top: 1rem;
+        color: col.$color-green;
+    }
+    p{
+        line-height: 1.8;
+    }
+    &__box{
+        background-color: col.$color-green-light;
+        padding: 1.875rem;
+        margin-bottom: 1rem;
+    }
+    &__info__img img{
+        aspect-ratio: 3/2;
+        object-fit: cover;
+        object-position: 0 25%;
+      
+    }
+
+   &__info{
+   display: flex;
+   gap: 1rem;
+   }
+
+   &__infos{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: .8rem;
+    }
+
+   .info__icon{
+    height: 26px;
+    filter: invert(55%) sepia(7%) saturate(576%) hue-rotate(104deg) brightness(93%) contrast(92%);
+   }
+
+   .link{
+    color:col.$color-yellow;
+    text-decoration: underline;
+   }
+}
